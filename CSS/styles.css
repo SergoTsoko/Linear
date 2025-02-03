@@ -425,6 +425,10 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 100;
 }
+.button-learn:active{
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
 a {
   text-decoration: none;
   margin: 0;
@@ -477,7 +481,6 @@ a {
   max-height: 28px;
   font-size: 21px;
   color: rgb(255, 255, 255);
-  /* position: absolute; */
 }
 .keep-desc2,
 .keep-second-desc2 {
@@ -804,7 +807,7 @@ a {
   margin-right: 25px;
 }
 
-..burger {
+.burger {
   display: none;
   position: relative;
   z-index: 50;
