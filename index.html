@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+< lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linear app</title>
     <link rel="stylesheet" href="./CSS/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
-  <header>
+  <html>
     <div class="container">
       <div class="navigation">
         <img class="logo" src="./Images/logo.png" alt="logotype" />
@@ -25,15 +29,24 @@
               <div><p class="l">L</p></div>
             </button>
           </div>
-          <button class="sign-up">Sign up</button>
+          <button class="sign-up">Sign up </button>
         
         <div class="burger">
           <span></span>
         </div>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+    <span class="nav-list-mob">
+      <a class="nav-mob" href="#"> <p class="nav-p">Product</p> </a>
+      <a class="nav-mob" href="#"> <p class="nav-p">Method</p> </a>
+      <a class="nav-mob" href="#"> <p class="nav-p">Customers</p> </a>
+      <a class="nav-mob" href="#"> <p class="nav-p">Changelog</p> </a>
+      <a class="nav-mob" href="#"> <p class="nav-p">Pricing</p> </a>
+      <a class="nav-mob" href="#"> <p class="nav-p">Company</p> </a>
+      <a class="nav-mob" href="#"> <p class="nav-p">Contact</p> </a>
+    </span>
+  </header>
   <body>
     <div class="container">
       <section class="welcome">
@@ -96,15 +109,15 @@
               <span class="text-to">
                 <img class="colabs-images" src="./Images/text-to.png" alt="" />
                 <p>Text-to-issue commands</p>
-              </span></span
-            >
+              </span>
+              </span>
           </div>
         </div>
         <div class="feature-specs">
           <img src="./Images/Gradient.png" alt="features" />
         </div>
         <div class="feature-specs-mob">
-          <img src="./Images/feature-mob.png" alt="features" />
+          <img class="feature-mob" src="./Images/feature-mob.png" alt="features" />
         </div>
       </div>
       <div class="container">
@@ -114,7 +127,7 @@
             <p>
               Highlight key dates and divide projects into more granular phases.
             </p>
-            <!-- <img class="protorype" src="/Images/protorype.png" alt="" /> -->
+            <img class="protorype" src="/Images/protorype.png" alt="" />
           </div>
           <div class="dependencies">
             <h3>Project dependencies</h3>
@@ -123,6 +136,11 @@
               allocation and execution.
             </p>
             <!-- <img class="two-vectors" src="/Images/two-vectors.png" alt="" /> -->
+            <img
+              class="dependencies-img-mob"
+              src="./Images/dependiencies-mob.png"
+              alt=""
+            />
           </div>
           <img
             class="dependencies-img"
@@ -140,8 +158,10 @@
             </p>
           </span>
           <span class="singular-desc"> </span>
+          <span class="singular-photos"> <img class="split-photo-mob" src="./Images/split-photo-mob.png" alt="split image" />
           <img class="split-photo" src="./Images/split.png" alt="split image" />
-        </div>
+        </span>
+      </div>
         <div class="projets-div-flexible">
           <span class="flexible-title-and-desc">
             <h1 class="flexible-title">Flexible project workflows</h1>
@@ -151,7 +171,8 @@
             </p>
           </span>
           <span class="maska-img">
-            <img src="./Images/maska.png" alt="" />
+            <img class="maska-image" src="./Images/maska.png" alt="" />
+            <img class="maska-im-mob" src="./Images/maska-mob.png" alt="" />
           </span>
         </div>
         <div class="projets-div-keep">
@@ -196,6 +217,8 @@
             they are progressing.
           </p>
           <div class="coordinate-img-bg">
+            <img class="coordinate-img-mob" src="./Images/coordinate-mob.png" alt="" />
+
             <img class="coordinate-img" src="./Images/coordinate.png" alt="" />
             <div class="button1">
               <button class="button-learn">
@@ -277,6 +300,7 @@
             </span>
           </div>
         </div>
+        <img class="maps-img-mob" src="./Images/maps-img-mob.png" alt="">
         <div class="feature-specs1">
           <img
             class="feature-specs1-img"
@@ -285,7 +309,7 @@
           />
         </div>
         <div class="feature-specs-mob">
-          <img src="./Images/feature-mob.png" alt="features" />
+          <!-- <img src="./Images/feature-mob.png" alt="features" /> -->
         </div>
       </div>
       <div class="container">
@@ -312,8 +336,10 @@
               </span>
             </div>
           </div>
+          <img class="multi-img-mob" src="./Images/multi-layered-img.png" alt="" />
+          <img class="multi-img" src="./Images/multi-layered-img.png" alt="" />
         </div>
-        <img class="multi-img" src="./Images/multi-layered-img.png" alt="" />
+
       </div>
     </section>
     <section class="clients-and-rewiews container">
@@ -341,8 +367,37 @@
         /></span>
         <span class="logotyps">
           <img class="supercell" src="./Images/supercell.png" alt=""
-        /></span>
+        />
+        </span>
       </div>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="ramp" src="./Images/ramp.png" alt=""/>
+                </div>
+        <div class="swiper-slide">
+          <img class="dolomits" src="img/verce.png" alt="dolomits image" />
+        </div>
+        <div class="swiper-slide">
+          <img class="haland" src="img/scale.png" alt="norvegias image" />
+        </div>
+        <div class="swiper-slide">
+          <img class="haland" src="img/monza.png" alt="norvegias image" />
+        </div>
+        <div class="swiper-slide">
+          <img class="haland" src="img/perplexity.png" alt="norvegias image" />
+        </div>
+        <div class="swiper-slide">
+          <img class="haland" src="img/remote.png" alt="norvegias image" />
+        </div>
+        <div class="swiper-slide">
+          <img class="haland" src="img/supercell.png" alt="norvegias image" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
       <div class="client-rewiews">
         <span class="rewiews-mercury">
           <span class="mercury-text"
@@ -446,5 +501,7 @@
     </footer>
 
     <script src="./JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   </body>
 </html>

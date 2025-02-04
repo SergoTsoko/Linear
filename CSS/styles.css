@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
+header {
+  display: flex;
+  justify-content: center;
+}
 body {
   background-color: #000;
   font-family: Roboto;
@@ -9,9 +12,26 @@ body {
   text-decoration: none;
   width: 100%;
 }
-.nav {
+.open {
+  display: flex !important;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.nav,
+.nav-mob {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-list-mob {
+  display: none;
+  width: 100%;
+  justify-content: center;
+  left: 0;
+  top: 60px;
+  justify-content: center;
+  align-items: center;
 }
 .container {
   margin: 10px 208px;
@@ -21,6 +41,7 @@ body {
 }
 .navigation {
   border-radius: 2px;
+  gap: 50px;
   border-color: #0a0a0a33;
   display: flex;
   flex-direction: row;
@@ -53,6 +74,7 @@ body {
 }
 .authorization {
   justify-content: space-around;
+  align-items: center;
   display: flex;
   gap: 8px;
 }
@@ -143,7 +165,7 @@ body {
 .mask-image img {
   width: 100%;
   position: absolute;
-  top: -170px;
+  /* top: -170px; */
 }
 .javas-img {
   min-width: 16px;
@@ -165,6 +187,7 @@ body {
   align-items: center;
   gap: 12px;
 }
+
 .Projects {
   font-size: 14px;
   font-weight: 500;
@@ -279,12 +302,18 @@ body {
 
 .protorype {
   position: relative;
+  display: none;
 }
 .two-vectors {
   position: absolute;
 }
 .dependencies-img {
   position: relative;
+}
+.dependencies-img-mob {
+  display: none;
+  max-width: 340px;
+  max-height: 250px;
 }
 .images {
   display: flex;
@@ -322,11 +351,18 @@ body {
 .split-photo {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, rgb(8, 9, 10) 95%);
 }
+.split-photo-mob {
+  display: none;
+}
 .projets-div-flexible {
   display: flex;
   margin-top: 140px;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
+}
+.projets-div-singular {
+  justify-content: center;
 }
 .flexible-title {
   max-width: 248px;
@@ -425,7 +461,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 100;
 }
-.button-learn:active{
+.button-learn:active {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -854,19 +890,208 @@ a {
   bottom: 50%;
   transform: rotate(45deg) translate(0, 50%);
 }
+.coordinate-img-mob, 
+.multi-img-mob, 
+.maska-im-mob, 
+.maps-img-mob,
+.swiper
+{
+  display: none;
+}
+.swiper-slide {
+  width: auto; /* или 33.33% для 3 слайдов */
+  display: flex;
+
+  justify-content: center;
+}
 
 @media (max-width: 1280px) {
-  .nav-p {
+  .burger {
+    display: flex;
+  }
+  .nav {
     display: none;
   }
-
+  .nav-list-mob {
+    flex-direction: column;
+    position: absolute;
+    background-color: #000;
+    align-self: center;
+    justify-self: center;
+  }
+.flexible-desc{
+  max-width: 455px;
+}
   .feature-specs-mob {
     position: relative;
     display: flex;
     justify-content: flex-end;
   }
-  .feature-specs {
+  .feature-specs,
+  .split-photo {
     display: none;
+  }
+  .projets-div-singular {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projets-div-keep,
+  .projets-div-keep1 {
+    justify-content: center;
+    margin-top: 80px;
+  }
+  .projets-div-breake {
+    padding-top: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .flexible-title-and-desc {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .singular-title {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+  .map {
+    justify-content: center;
+  }
+  .container {
+    margin: 4px 10px;
+  }
+  .manage-container {
+    margin: 320px 10px;
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+  .maps-container {
+    margin: 120px 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .singular-title h1 {
+    max-width: fit-content;
+  }
+  .singular-photos {
+    justify-content: center;
+    display: flex;
+  }
+  .split-photo-mob {
+    display: flex;
+  }
+  .coordinate-img-mob {
+    display: flex;
+  }
+  .coordinate-img {
+    display: none;
+  }
+  .coordinate-img-bg {
+    height: fit-content;
+    position: relative;
+  }
+  .projets-div-keep1 {
+    margin-top: 0;
+  }
+  .coordinate-strategic {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .multi-img-mob {
+    display: flex;
+  }
+  .multi-img {
+    display: none;
+  }
+  .product-pipline {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .multi-layered {
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .piple-navigation {
+    display: none;
+  }
+  .protorype {
+    display: flex;
+  }
+  .dependencies-img-mob {
+    display: flex;
+  }
+  .dependencies-img {
+    display: none;
+  }
+  .projets-div-breake {
+    padding-left: 0;
+  }
+  .singular-title h1 {
+    text-align: center;
+  }
+  .singular-title p {
+    text-align: left;
+  }
+  .projets-div-flexible {
+    justify-content: center;
+  }
+  .maska-im-mob {
+    display: flex;
+  }
+  .maska-image {
+    display: none;
+  }
+  .projets-div-flexible {
+    gap: 5px;
+  }
+  .flexible-title {
+    max-height: fit-content;
+  }
+  .flexible-desc {
+    max-height: fit-content;
+  }
+  .maps-img-mob {
+    display: flex;
+  }
+  .feature-specs1 {
+    display: none;
+  }
+  .build-the-feature .container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .build-the-feature{
+    justify-content: center;
+  }
+  .build-the-feature-title {
+    max-height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .lunar-text{
+    max-height: fit-content;
+  }
+  .client-rewiews{
+    justify-content: center;
+    gap: 20px;
+  }
+  .multi-layered{
+    margin-top: 0;
+  }
+  .client-companys{
+    margin-top: 0;
   }
 }
 
@@ -878,5 +1103,28 @@ a {
   }
   .feature-specs {
     display: none;
+  }
+  .client-rewiews{
+    justify-content: center;
+    gap: 10px;
+  }
+  .client-companys{
+    margin-top: 0;
+  }
+  .manage-container{
+    margin-top: 220px;
+  }
+}
+@media (max-width: 600px) {
+  .swiper{
+    display: block;
+  }
+  .client-companys{
+    display: none;
+  }
+}
+@media (max-width: 400px) {
+  .manage-container{
+    margin-top: 120px;
   }
 }
