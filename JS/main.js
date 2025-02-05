@@ -13,12 +13,15 @@ document.querySelector(".nav-list-mob").addEventListener("click", function () {
 
 
 let swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 1,
+  initialSlide: 0,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+    // loop: true,
   },
+ 
   breakpoints: {
     500: {
       slidesPerView: 3,
