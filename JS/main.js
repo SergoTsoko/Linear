@@ -13,9 +13,9 @@ document.querySelector(".nav-list-mob").addEventListener("click", function () {
 
 
 let swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
+  slidesPerView: 4,
   spaceBetween: 1,
-  initialSlide: 0,
+ 
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

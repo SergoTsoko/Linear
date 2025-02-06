@@ -22,6 +22,7 @@ body {
 .nav-mob {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
+  z-index: 50;
 }
 
 .nav-list-mob {
@@ -160,6 +161,7 @@ body {
 .mask-image {
   position: relative;
   width: 100%;
+  z-index: 1;
   /* overflow: hidden; */
 }
 .mask-image img {
@@ -942,6 +944,7 @@ a {
     background-color: #000;
     align-self: center;
     justify-self: center;
+    z-index: 2;
   }
   .flexible-desc {
     max-width: 455px;
@@ -1192,12 +1195,13 @@ a {
     font-size: 40px;
     line-height: 44px;
   }
-  .build-the-feature-title {
+  .build-the-feature .container{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 95px;
     padding-top: 95px;
   }
-  .two-buttons {
-    padding-bottom: 95px;
-  }
+
   .feature-specs-mob {
     position: relative;
     display: flex;
