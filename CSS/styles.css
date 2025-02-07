@@ -918,13 +918,32 @@ a {
   top: 10px;
   /* display: flex; */
 }
-.swiper-slide{
+.swiper-slide
+{
   align-items: center;
   display: flex;
   height: 28px;
+  width: fit-content;
+  justify-content: flex-start;
 }
-
-
+.swiper-wrapper{
+  gap: 4px;
+}
+.perplexity-slider{
+  width: 95px;
+}
+.swiper-slide-supercell{
+  width: 35px;
+}
+.remote-slider{
+  width: 80px;
+}
+.monza-slider{
+  width: 70px;
+}
+.scale-slider{width: 60px;}
+.verce-slider{width: 78px;}
+.ramp-slider{width: 70px;}
 
 .even-img-mob,
 .keep-img-mob,
